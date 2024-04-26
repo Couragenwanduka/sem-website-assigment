@@ -1,0 +1,321 @@
+.navBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: fixed;
+}
+
+.navContainer::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.1px;
+    background-color: gray;
+    margin-top: 100px;
+    position: fixed;
+    
+}
+
+.logo {
+    margin-top: 5px;
+    width: 150px;
+    height: 50px;
+}
+
+body {
+    background-color: black;
+    font-family: "Kanit", sans-serif;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.listDiv {
+    width: 50%;
+    margin-top: 15px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.listDiv a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.listDiv a:hover {
+    color: #c9f31d;
+}
+
+.lastNav {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.letsTalk {
+    background-color: #c9f31d;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: -10px;
+}
+
+.text {
+    font-size: 15px;
+}
+
+.unicode {
+    font-size: 30px;
+    margin-top: 5px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.letsTalk:hover {
+    background-color: #88a126;
+}
+
+.toggle-div-1 {
+    display: none;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+.toggle-div-3 {
+    display: none;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+
+
+#toggle-div-2 {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    margin-top: -15px;
+}
+
+.toggle2 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+#aside {
+    color: beige;
+    display: none;
+}
+
+#aside.active {
+    display: contents;
+    margin-top: 20px;
+}
+
+.contextContanier {
+    background-color: black;
+    width: 25%;
+    height: 100%;
+    margin-top: -2%;
+    margin-left: 75%;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 1;
+}
+
+.contextContanier::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+}
+
+.contextContanier::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+.contextContanier::-webkit-scrollbar-thumb {
+    background-color: #c9f31d;
+}
+
+.contextContanier::-webkit-scrollbar-thumb:hover {
+    background-color: #c9f31d;
+}
+
+.firstDiv {
+    margin-top: 0px;
+}
+
+.firstDiv p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: grey;
+}
+
+.logoaside {
+    margin-top: 40px;
+}
+
+.cancelDiv {
+    background-color: #c9f31d;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 30px;
+    margin-left: 80%;
+    border-radius: 10px;
+}
+
+.cancelDiv span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.strong {
+    margin-top: 30px;
+    color: gray;
+}
+
+.main {
+    margin-top: 4cqb;
+}
+
+.contactus {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactus div {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #c9f31d;
+}
+
+.contactus div img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.contactus div img:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.textDiv {
+    width: 70%;
+    margin-left: 50px;
+    display: flex;
+    color: black;
+    background-color: #d5ff2e;
+    margin-top: 30px;
+}
+
+.textDiv p {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.list {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.list a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.1px;
+    background-color: gray;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .listDiv {
+        display: none;
+    }
+
+    .lastNav {
+        width: 250px;
+        margin-top: 15px;
+    }
+
+    .toggle-div-1 {
+        display: contents;
+        margin-left: 20px;
+        padding: 8px;
+        height: 40px;
+        width: 40px;
+        margin-top: -15px;
+    }
+
+    .letsTalk {
+        width: 130px;
+        margin-left: -30px;
+    }
+
+    .toggle1 {
+        display: contents;
+        color: whitesmoke;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .logo {
+        margin-top: 15px;
+        width: 100px;
+        height: 20px;
+    }
+
+    #aside {
+        margin-top: -50%;
+    }
+
+    .contextContanier {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -20%;
+    }
+
+    .list.active {
+        display: contents;
+        cursor: pointer;
+    }
+    .active.toggle-div-1 {
+        display: none;
+    }
+
+    .list.active.toggle1 {
+        display: none;
+    }
+
+    .list.active .toggle-div-3 {
+        display: contents;
+        color: #c9f31d;
+    }
+    .list.active.toggle3{
+        display: contents;
+    }
+   
+}
