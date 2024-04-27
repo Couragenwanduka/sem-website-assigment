@@ -23,45 +23,7 @@ const toggle = () => {
   });
 }
 
-const colorizeText = () => {
-    const designerElement = document.getElementById('designer');
-    const words = designerElement.textContent.split(' ');
-    designerElement.innerHTML = ''; // Clear the original text
-    words.forEach((word, i) => {
-        const span = document.createElement('span');
-        span.textContent = word + ' ';
-        console.log(span)
-        span.style.color = '#c9f31d';
-        span.classList.add('colored-span'); // Add a custom class
-        designerElement.appendChild(span);
-    });
-};
- // Call colorizeText initially
 
- const removeColor = () => {
-    const coloredSpans = document.querySelectorAll('.colored-span');
-    coloredSpans.forEach((span) => {
-        const characters = span.textContent.split('');
-        characters.forEach((char, index) => {
-            setTimeout(() => {
-                span.textContent = span.textContent.replace(char, ''); // Remove the character
-            }, index * 50); // Adjust the delay as needed
-        });
-    });
-};
-
-
-
-
-// Call removeColor every 2 seconds to remove the color
-setInterval(colorizeText(),2000);
-setInterval(removeColor, 3000);
-
-
-
-// colorizeText();
-
-// Call colorizeText() every 2 seconds
 
 
 

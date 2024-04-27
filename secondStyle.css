@@ -1,11 +1,10 @@
 .navBar.scrolled {
     background-color: black; /* Change to the desired background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
-    /* width: 50%; */
     height: 120px;
-    margin-top: -10px;
+    margin-top: -20px;
     position: fixed;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+    z-index: 2;
     .logo {
         margin-top: 30px;
         width: 150px;
@@ -48,4 +47,5 @@
         position: fixed;
     }
 }
+  
 

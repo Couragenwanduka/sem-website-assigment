@@ -3,7 +3,8 @@
     width: 100%;
     justify-content: space-between;
     margin-top: 30px;
-    position: fixed;
+    position: relative;
+    z-index: 2;
 }
 
 .navContainer::after {
@@ -13,7 +14,7 @@
     height: 0.1px;
     background-color: gray;
     margin-top: 100px;
-    position: fixed;
+    position: relative;
     
 }
 
