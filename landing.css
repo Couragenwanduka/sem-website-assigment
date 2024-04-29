@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.starDiv{
+    z-index: 1;
+    position: relative;
+    background-color: rgb(28, 26, 26);
+    height: 100%;
+}
+.starimage{
+color: #c9f31d;
+margin-left: 47%;
+margin-top: 5%;
+
+}
+.starDiv p{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    font-family:  "Poppins", sans-serif;
+    overflow-wrap: break-word;
+    inline-size: 1150px;
+    margin-left: 5%;
+    line-height: 60px;
+    word-spacing: 10px;
+}
+.buttonDiv{
+    margin-left: 25%;
+    margin-top: -40px;
+    z-index: 1;
+}
+.buttonDiv button{
+    padding: 30px;
+    color: white;
+    background-color: rgb(32, 30, 30);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.buttonDiv button.active{
+    background-color: #c9f31d;
+}
+.aboutContanier{
+    z-index: 1;
+    position: relative;
+    background-color:  rgb(17, 17, 17);
+    display: flex;
+    height: 100%;
+}
+.manImage{
+    margin-top: 20px;
+}
+.infoDiv{
+    margin-left: 30px;
+}
+.Personal h1{
+    color: aliceblue;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.Personal p{
+    color: grey;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    inline-size: 600px;
+}
+.contactDiv{
+    display: flex;
+    margin-left: 40px;
+}
+.emailContact,.phoneDiv{
+    padding: 20px 80px 20px 80px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgb(22, 20, 20);
+}
+.AddressDiv{
+    padding: 20px 70px 20px 70px;
+    background-color: rgb(22, 20, 20);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.follow{
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(22, 20, 20);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.emailContact h1,.AddressDiv h1,.follow,.phoneDiv{
+    color: gray;
+}
+.emailContact p ,.phoneDiv p ,.AddressDiv p{
+    color: white;
+}
+.emailContact:hover, .phoneDiv:hover , .AddressDiv:hover,.follow:hover{
+    border: #c9f31d 1px solid;
+}
+.Icons{
+    display: flex;
+  justify-content: space-evenly;
+
+}
+.Icons div{
+    margin-left: 23px;
+}
+.experienceContanier{
+    z-index: 1;
+    position: relative;
+    background-color:  rgb(17, 17, 17);
+    display: flex;
+    height: 100%;
+}
+.jobDiv{
+  color: white;
+  margin-left: 40px;
+}
+.jobDiv div{
+    display: flex;
+}
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+}
+.mainContanier{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.jobTitle{
+    font-size: 25px;
+    margin-bottom: 30px;
+    width: 400px;
+}
+.jobContainer{
+    margin-top: 30px;
+    border-bottom: gray 1px solid;
+}
+.jobContainer:hover{
+    border-bottom: #c9f31d 1px solid;
+}
+.year{
+    width: 60%;
+    color: #c9f31d;
+}
+.years{
+    color: #c9f31d;
+}
+.school{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+.Course{
+    margin-bottom: 30px;
+    font-size: 25px;
+
+}
+.place{
+    font-size: 15px;
+    color: gray;
+}
+.mainContanier3{
+    display: flex;
+}
+.firstSkill{
+    display: flex;
+}
+.secondSkill{
+    display:flex ;
+}
+.html{
+    padding: 20px 70px 20px 70px;
+    background-color: rgb(22, 20, 20);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+.figma,.boot{
+    padding: 20px 70px 20px 70px;
+    background-color: rgb(22, 20, 20);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+.wordpress{
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(22, 20, 20);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+.htmlImage,.figmaImage ,.wordpressImage,.bootImage{
+    background-color: aliceblue;
+    border-radius: 50px;
+    height: 100px;
+}
+.skillDiv h1{
+  color: gray;
+  margin-left: 20px;
+}
+.skillDiv p{
+    color: white;
+    font-size: 50px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.skillDiv2 p{
+    color: white;
+    font-size: 50px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.skillDiv2 h1{
+    color: gray;
+    margin-left: 20px;
+}
+.figma:hover,.boot:hover,.html:hover,.wordpress:hover{
+    border: #c9f31d 1px solid;
+}

@@ -26,7 +26,21 @@ const toggle = () => {
 
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    var designerText = document.getElementById('designer').innerText;
+    var designerDiv = document.getElementById('designer');
+    designerDiv.innerText = '';
+    for (var i = 0; i < designerText.length; i++) {
+        var span = document.createElement('span');
+        span.innerText = designerText[i];
+        span.classList.add('letter');
+        designerDiv.appendChild(span);
+    }
+    var letters = document.querySelectorAll('.letter');
+    letters.forEach(function(letter, index) {
+        letter.style.animation = 'changeColor 5s infinite alternate ' + (index * 0.1) + 's';
+    });
+});
 document.addEventListener('DOMContentLoaded', () => {
     sideMenu();
     closeMenu();
@@ -53,6 +67,14 @@ window.addEventListener('scroll', function() {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const imageContainer = document.querySelector('.image-container');
+    const totalWidth = imageContainer.scrollWidth; // Total width of all images
+    const containerWidth = imageContainer.clientWidth; // Width of the container
+    const scrollSpeed = 100; // Adjust scrolling speed as needed
+    const animationDuration = totalWidth / containerWidth* scrollSpeed; // Calculate animation duration based on total width and scrolling speed
+    document.documentElement.style.setProperty('--animation-duration', animationDuration + 's');
+});
 
 
 
