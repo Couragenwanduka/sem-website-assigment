@@ -3,7 +3,8 @@ const sideBar = document.querySelector('.sidebar');
 const closeBtn = document.getElementById('CancelDiv');
 const toggleBtn = document.getElementById('listtoggle');
 const displaylist= document.getElementById('listdisplay');
-
+const toggleButtons= document.querySelectorAll('.toggle-button');
+const firstRender= document.getElementById('first-render');
 
 const sideMenu = () => {
     Hamburger.addEventListener('click', () => {
@@ -77,4 +78,40 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+let activeButton = null;
+
+// Function to deactivate the currently active button
+function deactivateActiveButton() {
+    if (activeButton) {
+        const activeTargetId = activeButton.getAttribute('data-target');
+        const activeTargetContent = document.getElementById(activeTargetId);
+        activeTargetContent.classList.remove('active');
+    }
+}
+
+toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const targetContent = document.getElementById(targetId);
+         
+        toggleButtons.forEach(btn => {
+            btn.classList.remove('firstClicked')
+            btn.classList.remove('clicked');
+        });
+
+        // Add the 'clicked' class to the clicked button
+        button.classList.add('clicked');
+
+        if (firstRender) {
+            firstRender.classList.add('hidden');
+        }
+        deactivateActiveButton();
+
+        // Toggle the 'active' class to show/hide content
+        targetContent.classList.add('active');
+
+        // Set the newly clicked button as the active button
+        activeButton = button;
+    });
+});
 

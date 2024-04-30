@@ -2,7 +2,7 @@
     background-color: black; /* Change to the desired background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
     height: 120px;
-    margin-top: -20px;
+    margin-top: -50px;
     position: fixed;
     z-index: 2;
     .logo {

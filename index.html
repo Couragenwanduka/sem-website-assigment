@@ -176,13 +176,62 @@
     <p>I'm David Matias, I'm a Brand & Webflow Designer, Currently residing in the lush Victoria Street London,
          Matias operates globally and is ready to take on any design challenge.</p>
          <div class="buttonDiv">
-            <button>About</button>
-            <button>Experience</button>
-            <button>Education</button>
-            <button>Skills</button>
+            <button class="toggle-button" data-target="about" id="aboutbtn">About</button>
+            <button class="toggle-button" data-target="experience" id="experiencebtn">Experience</button>
+            <button class="toggle-button" data-target="education" id="educationbtn">Education</button>
+            <button class="toggle-button" data-target="skill" id="skillbtn">Skills</button>
          </div>
 </div>
-<div class="aboutContanier">
+<div class="firstrender" id="first-render">
+    <div class="manImage">
+        <img src="/public/personal-infothumb-removebg-preview.png"/>
+    </div>
+    <div class="infoDiv">
+        <div class="Personal">
+            <h1>Personal Info</h1>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, 
+            aliquam quaerats voluptatem. Ut enim ad minima veniam, 
+            exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+        </div>
+        <div>
+            <div class="contactDiv">
+                <div class="emailContact">
+                    <h1>Email</h1>
+                    <p>dev.mostafizar.com</p>
+                </div>
+                <div class="phoneDiv">
+                    <h1>Phone</h1>
+                    <p>+98 4758 2154 021</p>
+                </div>
+            </div>
+            <div class="contactDiv">
+                <div class="AddressDiv">
+                    <h1>Address</h1>
+                    <p>Dahagram, Lalmonirhat</p>
+                </div>
+                <div class="follow">
+                    <div><h1>Follow</h1></div>
+                    <div class="Icons">
+                        <div>
+                            <img src="/public/facebook.png"/>
+                           </div>
+                           <div>
+                            <img src="/public/twitter.png"/>
+                           </div>
+                           <div>
+                            <img src="/public/linkedin.png"/>
+                           </div>
+                           <div>
+                            <img src="/public/youtube.png"/>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="aboutContanier" id="about">
     <div class="manImage">
         <img src="/public/personal-infothumb-removebg-preview.png"/>
     </div>
@@ -232,7 +281,7 @@
     </div>
 </div>
 <div>
-    <div class="experienceContanier">
+    <div class="experienceContanier" id="experience">
              <div>
                  <img src="/public/personal-infothumb-removebg-preview.png"/>
              </div>
@@ -277,7 +326,7 @@
  <div>
     </div>
     </div>
-    <div class="experienceContanier">
+    <div class="educationContainer" id="education">
              <div>
                  <img src="/public/personal-infothumb-removebg-preview.png"/>
              </div>
@@ -324,7 +373,7 @@
  </div>
  </div>
  </div>
- <div class="experienceContanier">
+ <div class="skillContanier" id="skill">
     <div class="mainContanier3">
              <div>
                  <img src="/public/personal-infothumb-removebg-preview.png"/>
@@ -382,6 +431,15 @@
     </div>
 </div>
  </div>
+ <div class="scrolling-images">
+    <div class="image-container">
+        <img src="/public/ts6-removebg-preview.png"/>
+        <img src="/public/ts7-removebg-preview.png"/>
+        <img src="/public/ts8-removebg-preview.png"/>
+        <img src="/public/ts7.png"/>
+        <img src="/public/ts8.png"/>
+    </div>
+</div>
  </section>
  
 </body>
